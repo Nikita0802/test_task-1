@@ -1,0 +1,93 @@
+body {
+	background-color: darkgrey;
+}
+
+.container {
+	margin-top: 5%;
+	margin-left: 25%;
+	min-height: 700px;
+	width: 600px;
+	background-color: azure;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Стили для квадратика с галочкой */
+.checkmark {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: #eee;
+	border-radius: 4px;
+	margin-right: 8px;
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.checkmark img {
+	display: none;
+}
+
+.checkmark.checked {
+	background-color: #4bcab1;
+}
+
+.checkmark.checked img {
+	display: block;
+}
+
+.todoList {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	background-color: #f2f2f2;
+	margin-bottom: 10px;
+	list-style-type: none;
+}
+
+
+/* Стили для текста задачи */
+.task {
+	display: inline-block;
+	text-decoration: none;
+	color: #000;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 24px;
+	flex-grow: 1;
+	margin-right: 10px;
+	text-decoration: none;
+	color: #333;
+	background-color: #fff;
+	padding: 5px;
+	border-radius: 3px;
+	transition: background-color 0.3s ease;
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+.task.checked {
+	text-decoration: line-through;
+	color: #888;
+	text-decoration: line-through;
+	background-color: #f2f2f2;
+}
+
+/* Стили для кнопки удаления */
+.delete-button {
+	border: none;
+	background: none;
+	cursor: pointer;
+	padding: 0;
+	padding: 5px;
+}
+
+.delete-icon {
+	width: 20px;
+	height: 20px;
+}
